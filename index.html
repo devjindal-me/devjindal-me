@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for proper character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    
+    <!-- Page title that appears in browser tab -->
+    <title>Dev Jindal</title>
+    
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Inter font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ============================
+         HEADER & NAVIGATION
+         ============================
+         Fixed header with logo, navigation links,
+         theme toggle, and mobile menu button
+    -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo"> DEV <span> JINDAL </span> </div>
+                
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <!-- Dark/Light Theme Toggle -->
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                
+                <!-- Mobile Menu Hamburger Button -->
+                <div class="hamburger menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============================
+             HERO SECTION
+             ============================
+             Main banner with introduction,
+             CTAs and profile image
+        -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Main headline and introduction -->
+                    <h1 class="hero-title">I'm Dev Jindal</h1>
+                    <p class="hero-subtitle">I'm a passionate frontend developer building responsive and intuitive web applications. My focus is on creating high-performance, accessible websites that provide exceptional user experiences.</p>
+                    
+                    <!-- Call to action buttons -->
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    
+                    <!-- Social media links -->
+                    <div class="social-links">
+                        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                        <!-- <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a> -->
+                    </div>
+                </div>
+                
+                <!-- Hero image -->
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/450x450" alt="Developer Portrait">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================
+             ABOUT SECTION
+             ============================
+             Personal information, background,
+             experience and contact details
+        -->
+        <section id="about" class="about">
+            <div class="container">
+                <!-- Section header -->
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <!-- <p>My background and experience</p> -->
+                </div>
+                
+                <div class="about-content">
+                    <!-- About image -->
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/400x500" alt="About Me">
+                    </div>
+                    
+                    <!-- About text and details -->
+                    <div class="about-text">
+                        <h3>Hi, I'm <span class="highlight">Dev Jindal</span></h3>
+                        <p>I'm a passionate frontend developer building responsive and intuitive web applications. My focus is on creating high-performance, accessible websites that provide exceptional user experiences.</p>
+                        <p>I'm a 7th-grade student and a frontend developer passionate about creating sleek, techy-themed websites with cool animations. I can work with many JavaScript libraries and frameworks like React, Node.js, and next js and also have experience with Tailwind CSS. While I don’t enjoy studying much, I still manage subjects like IOT, inovation, and math . i have done many projects and i am still learning new things.</p>
+                        
+                        <!-- Personal details with icons -->
+                        <div class="about-details">
+                            <div class="detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Haryana, India</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-envelope"></i>
+                                <span>Massage@devjindal.me</span>
+                            </div>
+                            <!-- <div class="detail">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Available for freelance</span>
+                            </div> -->
+                        </div>
+                        
+                        <!-- Resume download button -->
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================
+             SKILLS SECTION
+             ============================
+             Technical skills with visual
+             progress bars and categories
+        -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <!-- Section header -->
+                <div class="section-header">
+                    <h2>My Skills</h2>
+                    <p></p>
+                </div>
+                
+                <div class="skills-container">
+                    <!-- Frontend skills category -->
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skills-grid">
+                            <!-- HTML5 skill -->
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <h4>HTML5</h4>
+                                <div class="skill-bar" data-percent="95">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- CSS3 skill -->
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                                <h4>CSS3</h4>
+                                <div class="skill-bar" data-percent="90">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- JavaScript skill -->
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar" data-percent="85">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+
+                             <!-- Node.js skill -->
+                             <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                                <h4>Node.js</h4>
+                                <div class="skill-bar" data-percent="75">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- React skill -->
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                                <h4>React</h4>
+                                <div class="skill-bar" data-percent="80">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tools & Frameworks skills category -->
+                    <!-- <div class="skill-category">
+                        <h3>Tools & Frameworks</h3>
+                        <div class="skills-grid">
+                             Sass skill 
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-sass"></i></div>
+                                <h4>Sass</h4>
+                                <div class="skill-bar" data-percent="85">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Git skill 
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                                <h4>Git</h4>
+                                <div class="skill-bar" data-percent="90">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Figma skill 
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                                <h4>Figma</h4>
+                                <div class="skill-bar" data-percent="80">
+                                    <div class="skill-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================
+             PROJECTS SECTION
+             ============================
+             Portfolio projects with filtering,
+             previews, and links
+        -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <!-- Section header -->
+                <div class="section-header">
+                    <h2>My Projects</h2>
+                    <p>Some of my recent work</p>
+                </div>
+                
+                <!-- Projects grid with filterable cards -->
+                <div class="projects-grid">
+                    <!-- Project 1 - Web App -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Dashboard</h3>
+                            <p>A responsive dashboard with real-time data visualization</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 - Web App -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>A responsive personal portfolio with modern design</p>
+                            <div class="project-tags">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 - Web App -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 3">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Management App</h3>
+                            <p>Web application for organizing and tracking tasks</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Firebase</span>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 - Web App -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400" alt="Project 4">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                    <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Weather Application</h3>
+                            <p>Real-time weather forecasting with location services</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>API</span>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- View all projects button -->
+                <div class="projects-cta">
+                    <a href="#" class="btn btn-secondary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================
+             TESTIMONIALS SECTION
+             ============================
+             Client testimonials with slider
+             functionality and navigation
+        -->
+        <!-- <section class="testimonials">
+            <div class="container">
+                <!-- Section header 
+                <div class="section-header">
+                    <h2>Testimonials</h2>
+                    <p>What clients say about me</p>
+                </div>
+                
+                <!-- Testimonial slider with multiple slides -
+                <div class="testimonial-slider">
+                    <!-- Testimonial 1 --
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"John delivered an outstanding website that perfectly captured our brand identity. His attention to detail and problem-solving abilities made our collaboration a success."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://via.placeholder.com/80x80" alt="Client">
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>Marketing Director, TechCorp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 --
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"Working with John was a pleasure. He understood our requirements quickly and delivered a responsive, user-friendly application that exceeded our expectations."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://via.placeholder.com/80x80" alt="Client">
+                                <div class="author-info">
+                                    <h4>Michael Brown</h4>
+                                    <p>CEO, StartupInc</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 --
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"John's technical expertise and creative approach helped us transform our outdated website into a modern, high-performing platform. Highly recommended!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://via.placeholder.com/80x80" alt="Client">
+                                <div class="author-info">
+                                    <h4>Emma Davis</h4>
+                                    <p>Product Manager, InnovateDigital</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider navigation controls --
+                <div class="testimonial-controls">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- ============================
+             CONTACT SECTION
+             ============================
+             Contact information, form, and
+             social media links
+        -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <!-- Section header -->
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Let's work together on your next project</p>
+                </div>
+                
+                <div class="contact-container">
+                    <!-- Contact information cards -->
+                    <div class="contact-info">
+                        <!-- Location info -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Haryana, India</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Email info -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>massage@devjindal.me</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Phone info -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+91 9810688873</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Social media links -->
+                        <!-- <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div> -->
+                    
+                    <!-- Contact form with validation -->
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <!-- Name field -->
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <!-- Email field -->
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <!-- Subject field -->
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <!-- Message field -->
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================
+         FOOTER
+         ============================
+         Site footer with logo, links,
+         newsletter, and copyright
+    -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer main content -->
+            <div class="footer-content">
+                <!-- Logo and tagline -->
+                <div class="footer-logo">
+                    <div class="logo"> DEV <span> JINDAL </span> </div>
+                    <p>Creating innovative digital experiences</p>
+                </div>
+                
+                <!-- Quick navigation links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter signup -->
+                <!-- <div class="footer-newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates on new projects and articles</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-secondary">Subscribe</button>
+                    </form>
+                </div> -->
+            </div>
+            
+            <!-- Footer bottom with copyright and social links -->
+            <div class="footer-bottom">
+                <p>&copy; 2023 DevPortfolio. All rights reserved <a href="admin/index.html">.</a></p>
+                <!-- <div class="admin-link">
+                    <a href="admin/index.html"></a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
